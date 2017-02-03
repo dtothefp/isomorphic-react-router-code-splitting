@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script>
+      window.Promise || document.write('<script src="https://unpkg.com/es6-promise@3.2.1/dist/es6-promise.min.js"><\/script>');
+      window.fetch || document.write('<script src="https://unpkg.com/whatwg-fetch@1.0.0/fetch.js"><\/script>');
+    </script>
+
+    {{helmet.title.toString() | safe}}
+
+    {% get_asset type="css" %}
+  </head>
+  <body>
+    {% block main %}{% endblock %}
+    {% redux_store %}
+    {% get_asset type="js" %}
+  </body>
+</html>

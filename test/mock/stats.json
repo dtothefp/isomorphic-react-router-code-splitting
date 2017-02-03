@@ -1,0 +1,17 @@
+{
+  "javascript": {
+    "main": "http://localhost:9090/app.js"
+  },
+  "styles": {
+    "main": "http://localhost:9090/base.css"
+  },
+  "assets": {
+    "./src/components/child.css": {
+      "spacing": "child__spacing___3bqnR",
+      "_style": ".child__spacing___3bqnR {\n  display: block;\n}\n"
+    },
+    "./src/assets/css/base.css": {
+      "_style": "bloop"
+    }
+  }
+}

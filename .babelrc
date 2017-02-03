@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "node7",
+    "react",
+    "es2017"
+  ],
+  "plugins": [
+    "babel-plugin-add-module-exports"
+  ]
+}

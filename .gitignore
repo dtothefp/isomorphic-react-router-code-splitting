@@ -1,0 +1,14 @@
+# General
+.DS_Store
+
+# Dependencies
+node_modules
+
+# Logs and caches
+coverage
+*.log
+.eslintcache
+
+# Project
+dist
+_book

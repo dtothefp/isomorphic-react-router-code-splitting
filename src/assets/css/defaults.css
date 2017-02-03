@@ -1,0 +1,130 @@
+/**
+ * @overview Defaults and CSS resets
+ */
+
+html {
+  box-sizing: border-box;
+  font-size: var(--base-font-size);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--sans-stack);
+  font-weight: 300;
+  font-style: normal;
+  font-size: var(--font-default);
+  line-height: var(--base-line-height);
+  letter-spacing: var(--base-tracking);
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+strong {
+  font-weight: 500;
+}
+
+:global {
+
+  .fonts-1 body {
+    font-family: var(--calibre-light);
+  }
+
+  .fonts-1 strong {
+    font-family: var(--calibre-light);
+    font-weight: 700; /* Fake medium weight until Calibre Medium is loaded */
+  }
+
+  .fonts-2 strong {
+    font-family: var(--calibre-medium);
+    font-weight: 500;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: var(--size-default);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--size-default);
+  font-weight: inherit;
+}
+
+blockquote {
+  margin: 0 0 var(--size-default);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation; /* Remove 300ms click delay */
+}
+
+input,
+button,
+select,
+textarea {
+  line-height: inherit;
+}
+
+textarea {
+  resize: vertical; /* Only allow vertical resize of textareas */
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
